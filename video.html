@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test-video</title>
+        <link rel="stylesheet" href="video.css">
+    </head>
+    <body>
+        <div class="video-box" id="videoBox">
+            <!-- video标签 -->
+            <video  data-icon="0" src="http://h264.sctv.com/WCM/vesue/201811/20/921f454285540000_WEB_HD_1280X720_1500_CBR.mp4" data-state="a" id="video" webkit-playsinline playsinline>您的浏览器不支持 video 标签,请更新浏览器</video>
+            <div class="video-icons">
+                <div class="progressBox" id="progressBox_special">
+                    <!-- 橘色进度条div -->
+                    <div class="progressBar"></div>
+                    <div class="imgBox"><span class="progressImg" id="progressImg"></span></div>
+                </div>
+                <!-- 按钮 -->
+                <div class="icons">
+                    <div class="icon-left">
+                        <img src="image/play.png" alt="" class="control-btn">
+                        <img src="image/reload.png" alt="" class="reload-btn">
+                        <p class="progressTime">00:00</p>
+                        <p class="allTime"></p>
+                    </div>
+                    <div class="icon-right">
+                        <div class="voice-box">
+                            <!-- 声音控制条 -->
+                            <div class="voice-control-box">
+                                <div class="voice-control">
+                                    <div class="voice-bg">
+                                        <div class="voice-color"></div>
+                                        <span class="voice-img" id="voiceImg"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voice-btn"></div>
+                        </div>
+                        <img src="image/bulm.png" class="bulm-btn" alt="">
+                        <img src="image/fullscreen.png" class="biggerBtn" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="jquery.min.js"></script>
+    <script src="video.js"></script>
+</html>
